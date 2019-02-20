@@ -3,13 +3,14 @@
     <head>
         <title>Intuit Accounts - Sign Up</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     </head>
     <nav class="sign-in">
         <div class="sign-in-text">
-            <p class="info">
+            <p>
                 Already have an Intuit account?<br>
                 <a href="#">I forgot my User ID or Password</a>
             </p>
@@ -35,26 +36,31 @@
         <main>
             <h1>One Account.</h1>
             <h1>Everything Intuit.</h1>
-            <br>
-            <p>Create an account for all of intuit's products including Mint. <a href="#">Learn more</a></p>
+            <p><br>Create an account for all of Intuit's products including Mint. <a href="#">Learn more</a></p>
             <form id="sign-up-form" action="#" method="POST">
                 <div class="form-input-category">
-                    <p>Email address</p>
-                    <input type="email">
+                    <label for="email">Email address</label>
+                    <input id="email" type="email">
                 </div>
                 <div class="form-input-category">
-                    <p>Phone (recommended)</p>
-                    <input type="tel">
+                    <label for="phone">Phone (recommended)</label>
+                    <input id="phone" type="tel">
+                    <p>Standard call, messaging or data rates may apply.</p>
                 </div>
                 <div class="form-input-category">
-                    <p>Password</p>
-                    <input type="password">
+                    <label for="pass">Password</label>
+                    <div class="form-input-container">
+                        <input id="pass" type="password">
+                        <img height="21px" src="img/lock-left-grey.png">
+                    </div>
                 </div>
                 <div class="form-input-category">
-                    <button type="submit" form="sign-up-form" value="Submit">Submit</button>
+                    <button type="submit" form="sign-up-form" value="Submit"><img height="15.75px" src="img/icon-whitelock.png">Create Account</button>
                 </div>
             </form>
-            <p class="info"><em></em>By clicking Create Account, you agree to our <a href="#">License Agreement</a> and have read and acknowledge our <a href="#">Privacy Statement</a>.</p>
+            <p class="info">By clicking Create Account, you agree to our<br>
+                <a href="#">License Agreement</a> and have read and acknowledge<br>
+                our <a href="#">Privacy Statement</a>.</p>
             <div class="form-captcha-statement">
                 <p>Invisible reCAPTCHA by Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.</p>
             </div>
